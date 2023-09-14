@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="738.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ajie.controller.AllController">
+   <tabs>
+      <Tab text="Wmiexec">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="405.0" prefWidth="738.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="密码模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="714.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP " />
+                                    <TextField fx:id="w_m_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Password" />
+                                    <TextField fx:id="w_m_pass" layoutX="425.0" layoutY="14.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <TextField fx:id="w_m_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="w_m_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#m_attack" text="ATTACK" />
+                                    <Button fx:id="w_m_clear" layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#m_clear" text="Clear" />
+                                    <TextArea fx:id="w_m_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Hash模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP" />
+                                    <TextField fx:id="w_h_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <TextField fx:id="w_h_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Hash" />
+                                    <TextField fx:id="w_h_hash" layoutX="407.0" layoutY="15.0" prefHeight="26.0" prefWidth="163.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="w_h_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#w_h_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#w_h_clear" text="Clear" />
+                                    <TextArea fx:id="w_h_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="PSexec">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="684.0">
+               <children>
+                  <TabPane prefHeight="405.0" prefWidth="738.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="密码模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="714.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP " />
+                                    <TextField fx:id="p_m_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Password" />
+                                    <TextField fx:id="p_m_pass" layoutX="425.0" layoutY="14.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <TextField fx:id="p_m_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="p_m_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#p_m_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#p_m_clear" text="Clear" />
+                                    <TextArea fx:id="p_m_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Hash模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP" />
+                                    <TextField fx:id="p_h_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <TextField fx:id="p_h_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Hash" />
+                                    <TextField fx:id="p_h_hash" layoutX="406.0" layoutY="14.0" prefHeight="26.0" prefWidth="163.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="p_h_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#p_h_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#p_h_clear" text="Clear" />
+                                    <TextArea fx:id="p_h_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="SMBexec">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="684.0">
+               <children>
+                  <TabPane prefHeight="405.0" prefWidth="738.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="密码模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="714.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP " />
+                                    <TextField fx:id="s_m_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Password" />
+                                    <TextField fx:id="s_m_pass" layoutX="425.0" layoutY="14.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <TextField fx:id="s_m_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="s_m_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#s_m_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#s_m_clear" text="Clear" />
+                                    <TextArea fx:id="s_m_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Hash模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP" />
+                                    <TextField fx:id="s_h_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <TextField fx:id="s_h_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="372.0" layoutY="18.0" text="Hash" />
+                                    <TextField fx:id="s_h_hash" layoutX="409.0" layoutY="15.0" prefHeight="26.0" prefWidth="163.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="s_h_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#s_h_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#s_h_clear" text="Clear" />
+                                    <TextArea fx:id="s_h_srea" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="ATexec">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="684.0">
+               <children>
+                  <TabPane prefHeight="405.0" prefWidth="738.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="密码模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="714.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP " />
+                                    <TextField fx:id="a_m_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Password" />
+                                    <TextField fx:id="a_m_pass" layoutX="425.0" layoutY="14.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <TextField fx:id="a_m_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="a_m_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#a_m_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#a_m_clear" text="Clear" />
+                                    <TextArea fx:id="a_m_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Hash模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP" />
+                                    <TextField fx:id="a_h_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <TextField fx:id="a_h_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Hash" />
+                                    <TextField fx:id="a_h_hash" layoutX="407.0" layoutY="13.0" prefHeight="26.0" prefWidth="163.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="a_h_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#a_h_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#a_h_clear" text="Clear" />
+                                    <TextArea fx:id="a_h_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="DCOMexec">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="684.0">
+               <children>
+                  <TabPane prefHeight="405.0" prefWidth="738.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="密码模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="714.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP " />
+                                    <TextField fx:id="d_m_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Password" />
+                                    <TextField fx:id="d_m_pass" layoutX="425.0" layoutY="14.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <TextField fx:id="d_m_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="d_m_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#d_m_attack" text="ATTACK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#d_m_clear" text="Clear" />
+                                    <TextArea fx:id="d_m_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Hash模式">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="19.0" text="IP" />
+                                    <TextField fx:id="d_h_ip" layoutX="28.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="171.0" layoutY="18.0" text="Username" />
+                                    <TextField fx:id="d_h_user" layoutX="229.0" layoutY="13.0" prefHeight="26.0" prefWidth="128.0" />
+                                    <Label layoutX="370.0" layoutY="18.0" text="Hash" />
+                                    <TextField fx:id="d_h_hash" layoutX="407.0" layoutY="15.0" prefHeight="26.0" prefWidth="163.0" />
+                                    <Label layoutX="13.0" layoutY="62.0" text="CMD" />
+                                    <TextField fx:id="d_h_cmd" layoutX="42.0" layoutY="58.0" prefHeight="26.0" prefWidth="387.0" />
+                                    <Button layoutX="449.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#d_h_attack" text="ATTCK" />
+                                    <Button layoutX="541.0" layoutY="58.0" mnemonicParsing="false" onMousePressed="#d_h_clear" text="Clear" />
+                                    <TextArea fx:id="d_h_area" layoutX="21.0" layoutY="92.0" prefHeight="258.0" prefWidth="689.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="DC-ATTACK">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="684.0">
+               <children>
+                  <TabPane layoutY="-2.0" prefHeight="403.0" prefWidth="738.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Zerologon Scan">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="672.0">
+                                 <children>
+                                    <Label layoutX="195.0" layoutY="28.0" text="DC-IP" />
+                                    <TextField layoutX="233.0" layoutY="23.0" prefHeight="26.0" prefWidth="175.0" />
+                                    <TextArea layoutX="20.0" layoutY="59.0" prefHeight="266.0" prefWidth="706.0" />
+                                    <Button layoutX="447.0" layoutY="21.0" mnemonicParsing="false" text="Go Scan" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Zerologon Attack">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab text="Sam The Admin">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="672.0">
+                                       <children>
+                                          <Label layoutX="23.0" layoutY="27.0" text="IP" />
+                                          <TextField layoutX="40.0" layoutY="23.0" prefHeight="26.0" prefWidth="140.0" />
+                                          <Label layoutX="192.0" layoutY="28.0" text="Username" />
+                                          <TextField layoutX="255.0" layoutY="25.0" prefHeight="26.0" prefWidth="146.0" />
+                                          <Label layoutX="417.0" layoutY="30.0" text="Password" />
+                                          <PasswordField layoutX="474.0" layoutY="24.0" prefHeight="26.0" prefWidth="129.0" />
+                                          <Label layoutX="613.0" layoutY="29.0" text="Port" />
+                                          <TextField layoutX="645.0" layoutY="26.0" prefHeight="26.0" prefWidth="55.0" />
+                                          <TextArea layoutX="20.0" layoutY="59.0" prefHeight="266.0" prefWidth="706.0" />
+                                          <Label layoutX="34.0" layoutY="335.0" text="CMD" />
+                                          <TextField layoutX="63.0" layoutY="331.0" prefHeight="26.0" prefWidth="449.0" />
+                                          <Button layoutX="548.0" layoutY="331.0" mnemonicParsing="false" text="Send" />
+                                          <Button layoutX="622.0" layoutY="331.0" mnemonicParsing="false" text="Clear" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="File Search">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="672.0">
+                                 <children>
+                                    <Label layoutX="172.0" layoutY="28.0" text="File Name" />
+                                    <TextField layoutX="233.0" layoutY="23.0" prefHeight="26.0" prefWidth="175.0" />
+                                    <TextArea layoutX="20.0" layoutY="59.0" prefHeight="266.0" prefWidth="706.0" />
+                                    <Button layoutX="422.0" layoutY="23.0" mnemonicParsing="false" text="Go  Search" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="MS17010">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="29.0" layoutY="35.0" text="IP/CIDR" />
+                                    <TextField layoutX="78.0" layoutY="31.0" prefHeight="26.0" prefWidth="185.0" />
+                                    <SplitMenuButton layoutX="291.0" layoutY="31.0" mnemonicParsing="false" text="Select">
+                                       <items>
+                                          <MenuItem mnemonicParsing="false" text="Vul Scan" />
+                                          <MenuItem mnemonicParsing="false" text="Vul Exploit" />
+                                       </items>
+                                    </SplitMenuButton>
+                                    <SplitMenuButton layoutX="400.0" layoutY="31.0" mnemonicParsing="false" text="Encoding">
+                                       <items>
+                                          <MenuItem mnemonicParsing="false" text="UTF-8" />
+                                          <MenuItem mnemonicParsing="false" text="......" />
+                                       </items>
+                                    </SplitMenuButton>
+                                    <Button layoutX="538.0" layoutY="31.0" mnemonicParsing="false" text="ATTACK" />
+                                    <TextField layoutX="29.0" layoutY="75.0" prefHeight="249.0" prefWidth="650.0" />
+                                    <Label layoutX="57.0" layoutY="334.0" text="CMD" />
+                                    <TextField layoutX="90.0" layoutY="330.0" prefHeight="26.0" prefWidth="352.0" />
+                                    <Button layoutX="483.0" layoutY="331.0" mnemonicParsing="false" text="Sent" />
+                                    <Button layoutX="576.0" layoutY="330.0" mnemonicParsing="false" text="Clear" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Update Log">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="684.0">
+               <children>
+                  <TextArea layoutX="4.0" layoutY="3.0" prefHeight="390.0" prefWidth="730.0" text="首次使用需初始化环境&#10;此环境需要python3支持&#10;&#10;pip install impacket&#10;&#10;&#10;smbexec&#10;&#10;" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

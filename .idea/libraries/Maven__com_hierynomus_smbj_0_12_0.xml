@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.hierynomus:smbj:0.12.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../tools/apache-maven-3.6.1/repository/com/hierynomus/smbj/0.12.0/smbj-0.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../tools/apache-maven-3.6.1/repository/com/hierynomus/smbj/0.12.0/smbj-0.12.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../tools/apache-maven-3.6.1/repository/com/hierynomus/smbj/0.12.0/smbj-0.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
